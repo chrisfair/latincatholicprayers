@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : CatholicPrayers.xml
+    Created on : November 21, 2010, 10:25 PM
+    Author     : christopher
+    Description:
+       Catholic Prayers in Latin and English.  Any number of prayers can be
+       added to any given prayer list provided that the number isn't so large
+       that a given computer has a hard time parsing the list.  As a rule
+       of thumb I am restricting each file to approximately ten prayers maximum
+       feel free to expand as you see fit.  However it isn't really necessary
+       any number of additional prayer lists can also be added provided that
+       the ListOfPrayerLists.xml is updated with the necessary information.  If
+       this is the original python version of the program any lists added to the
+       ListOfLists will automatically be added to the program.  Accompanying
+       sound files for each prayer can be added to the SoundFile directory and
+       should be named after the tag appended with .ogg (and should be ogg vobis
+       format as well).
+
+    <Template>
+         <EnglishPrayerName></EnglishPrayerName>
+         <LatinPrayerName></LatinPrayerName>
+         <EnglishPrayer></EnglishPrayer>
+         <LatinPrayer></LatinPrayer>
+         <Source></Source>
+    </Template>
+
+
+-->
+
+<root>
+
+    <AveMaria>
+        <EnglishPrayerName>Hail Mary</EnglishPrayerName>
+        <LatinPrayerName>Ave Maria</LatinPrayerName>
+        <EnglishPrayer>Hail Mary, full of grace, the Lord is with thee. Blessed art thou amongst women and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now, and in the hour of our death. Amen. </EnglishPrayer>
+        <LatinPrayer>Ave Maria, gratia plena, Dominus tecum. Benedicta tu in mulieribus, et benedictus fructus ventris tui, Iesus. Sancta Maria, Mater Dei, ora pro nobis peccatoribus, nunc, et in hora mortis nostrae. Amen. </LatinPrayer>
+        <LatinPrayerWithAccents>Ave María, grátia plena, Dóminus tecum. Benedícta tu in muliéribus, et benedíctus fructus ventris tui, Iesus. Sancta María, Mater Dei, ora pro nobis peccatóribus, nunc, et in hora mortis nostræ. Amen.</LatinPrayerWithAccents>
+        <Source>http://www.preces-latinae.org/thesaurus/Basics/AveMaria.html</Source>
+    </AveMaria>
+
+
+     <SalveRegina>
+         <EnglishPrayerName>Hail Holy Queen</EnglishPrayerName>
+         <LatinPrayerName>Salve Regina</LatinPrayerName>
+         <EnglishPrayer>Hail holy Queen, Mother of mercy, our life, our sweetness, and our hope. To thee do we cry, poor banished children of Eve. To thee do we send up our sighs, mourning and weeping in this valley of tears. Turn then, most gracious Advocate, thine eyes of mercy toward us. And after this our exile show unto us the blessed fruit of thy womb, Jesus.  O clement, O loving, O sweet Virgin Mary. Amen. Pray for us, O Holy Mother of God.  That we may be made worthy of the promises of Christ. et us pray
+Almighty, everlasting God, who by the cooperation of the Holy Spirit, didst prepare the body and soul of the glorious Virgin-Mother Mary to become a worthy dwelling for Thy Son; grant that we who rejoice in her commemoration may, by her loving intercession, be delivered from present evils and from the everlasting death. Amen. May the divine assistance remain with us always. Amen.</EnglishPrayer>
+         <LatinPrayer>Salve Regina, mater misericordiae, vita, dulcedo, et spes nostra, salve. Ad te clamamus exsules filii Hevae. Ad te suspiramus, gementes et flentes in hac lacrimarum valle. Eia, ergo, advocata nostra, illos tuos misericordes oculos ad nos converte. Et Iesum, benedictum fructum ventris tui, nobis post hoc exsilium ostende. O clemens, O pia, O dulcis Virgo Maria. Amen. Ora pro nobis, sancta Dei Genetrix. Ut digni efficiamur promissionibus Christi. Oremus Omnipotens sempiterne Deus, qui gloriosae Virginis Matris Mariae corpus et animam, ut dignum Filii tui habitaculum effici mereretur, Spiritu Sancto cooperante, praeparasti: da, ut cuius commemoratione laetamur; eius pia intercessione, ab instantibus malis, et a morte perpetua liberemur. Per eundem Christum Dominum nostrum. Amen. Divinum auxilium maneat semper nobiscum.  Amen.</LatinPrayer>
+         <LatinPrayerWithAccents>Salve Regína, mater misericórdiæ, vita, dulcédo, et spes nostra, salve. Ad te clamámus éxsules fílii Hevae. Ad te suspirámus, geméntes et flentes in hac lacrimárum valle. Eia, ergo, advocáta nostra, illos tuos misericórdes óculos ad nos convérte. Et Iesum, benedíctum fructum ventris tui, nobis post hoc exsílium osténde. O clemens, O pia, O dulcis Virgo Maria. Amen. Ora pro nobis, sancta Dei Génetrix. Ut digni efficiámur promissiónibus Christi. Oremus Omnípotens sempitérne Deus, qui gloriósæ Vírginis Matris Maríæ corpus et ánimam, ut dignum Fílii tui habitáculum effíci mererétur, Spíritu Sancto cooperánte, præparásti: da, ut cuius commemoratióne lætámur; eius pia intercessióne, ab instántibus malis, et a morte perpétua liberémur. Per eúndem Christum Dóminum nostrum. Amen. Divínum auxílium máneat semper nobíscum.  Amen.</LatinPrayerWithAccents>
+
+         <Source>http://www.preces-latinae.org/thesaurus/BVM/SalveRegina.html</Source>
+    </SalveRegina>
+
+    <Memorare>
+        <EnglishPrayerName>Remember, O most gracious Virgin Mary</EnglishPrayerName>
+        <LatinPrayerName>Memorare, O piissima Virgo Maria</LatinPrayerName>
+        <EnglishPrayer>Remember, O most gracious Virgin Mary, that never was it known that anyone who fled to thy protection, implored thy help, or sought thy intercession was left unaided. Inspired with this confidence, I fly to thee, O Virgin of virgins, my Mother; to thee do I come; before thee I stand, sinful and sorrowful. O Mother of the Word Incarnate, despise not my petitions, but in thy mercy hear and answer me. Amen. </EnglishPrayer>
+        <LatinPrayer>Memorare, O piissima Virgo Maria, non esse auditum a saeculo, quemquam ad tua currentem praesidia, tua implorantem auxilia, tua petentem suffragia, esse derelictum. Ego tali animatus confidentia, ad te, Virgo Virginum, Mater, curro, ad te venio, coram te gemens peccator assisto. Noli, Mater Verbi, verba mea despicere; sed audi propitia et exaudi. Amen.  </LatinPrayer>
+        <LatinPrayerWithAccents>Memoráre, O piísima Virgo María, non esse audítum a sæculo, quemquam ad tua curréntem præsídia, tua implorántem auxília, tua peténtem suffrágia, esse derelíctum. Ego tali animátus confidéntia, ad te, Virgo Vírginum, Mater, curro, ad te vénio, coram te gemens peccátor assísto. Noli, Mater Verbi, verba mea despícere; sed audi propítia et exáudi. Amen. </LatinPrayerWithAccents>
+        <Source>http://www.preces-latinae.org/thesaurus/BVM/Memorare.html</Source>
+    </Memorare>
+
+    <AveReginaCaelorum>
+        <EnglishPrayerName>Hail Queen of Heaven</EnglishPrayerName>
+        <LatinPrayerName>Ave Regina Caelorum</LatinPrayerName>
+        <EnglishPrayer>Hail, O Queen of Heaven enthroned, Hail, by angels Mistress owned.  Root of Jesse, Gate of morn, Whence the world's true light was born.  Glorious Virgin, joy to thee, Lovliest whom in Heaven they see, Fairest thou where all are fair! Plead with Christ our sins to spare. </EnglishPrayer>
+        <LatinPrayer>Ave, Regina caelorum, Ave, Domina Angelorum: Salve, radix, salve, porta, Ex qua mundo lux est orta: Gaude, Virgo gloriosa, Super omnes speciosa, Vale, o valde decora, Et pro nobis Christum exora. </LatinPrayer>
+        <Source>http://www.preces-latinae.org/thesaurus/BVM/AveRegina.html</Source>
+    </AveReginaCaelorum>
+
+     <AlmaRedemptorisMater>
+        <EnglishPrayerName>Mother Benign of Our Redeeming Lord</EnglishPrayerName>
+        <LatinPrayerName>Alma Redemptoris Mater</LatinPrayerName>
+        <EnglishPrayer>Mother of Christ, hear thou thy people's cry Star of the deep and Portal of the sky!Mother of Him who thee made from nothing made. Sinking we strive and call to thee for aid:Oh, by what joy which Gabriel brought to thee,Thou Virgin first and last, let us thy mercy see.</EnglishPrayer>
+        <LatinPrayer>Alma Redemptoris Mater, quae pervia caeli Porta manes, et stella maris, succurre cadenti,Surgere qui curat, populo: tu quae genuisti,Natura mirante, tuum sanctum Genitorem Virgo prius ac posterius, Gabrielis ab ore Sumens illud Ave, peccatorum miserere. </LatinPrayer>
+        <Source>http://www.preces-latinae.org/thesaurus/BVM/AlmaRed.html</Source>
+    </AlmaRedemptorisMater>
+
+</root>

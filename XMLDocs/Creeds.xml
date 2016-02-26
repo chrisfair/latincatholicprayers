@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : CatholicPrayers.xml
+    Created on : November 4, 2010, 7:34 PM
+    Author     : christopher
+    Description:
+       Catholic Prayers in Latin and English.  Any number of prayers can be
+       added to any given prayer list provided that the number isn't so large
+       that a given computer has a hard time parsing the list.  As a rule
+       of thumb I am restricting each file to approximately ten prayers maximum
+       feel free to expand as you see fit.  However it isn't really necessary
+       any number of additional prayer lists can also be added provided that
+       the ListOfPrayerLists.xml is updated with the necessary information.  If
+       this is the original python version of the program any lists added to the
+       ListOfLists will automatically be added to the program.  Accompanying
+       sound files for each prayer can be added to the SoundFile directory and
+       should be named after the tag appended with .ogg (and should be ogg vobis
+       format as well).
+
+    <Template>
+         <EnglishPrayerName></EnglishPrayerName>
+         <LatinPrayerName></LatinPrayerName>
+         <EnglishPrayer></EnglishPrayer>
+         <LatinPrayer></LatinPrayer>
+         <LatinPrayerWithAccents></LatinPrayerWithAccents> (optional)
+         <Source></Source>
+    </Template>
+
+
+-->
+
+<root>
+
+
+     <SymbolumApostolorum>
+         <EnglishPrayerName>Apostles' Creed</EnglishPrayerName>
+         <LatinPrayerName>Symbolum Apostolorum</LatinPrayerName>
+         <EnglishPrayer>I believe in God, the Father almighty, Creator of heaven and earth. I believe in Jesus Christ, His only Son, our Lord. He was conceived by the power of the Holy Spirit and born of the Virgin Mary. He suffered under Pontius Pilate, was crucified, died, and was buried. He descended to the dead. On the third day He rose again. He ascended into heaven and sits at the right hand of God, the Father Almighty. From thence He shall come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen. </EnglishPrayer>
+         <LatinPrayer>Credo in Deum Patrem omnipotentem, Creatorem caeli et terrae. Et in Iesum Christum, Filium eius unicum, Dominum nostrum, qui conceptus est de Spiritu Sancto, natus ex Maria Virgine, passus sub Pontio Pilato, crucifixus, mortuus, et sepultus, descendit ad inferos, tertia die resurrexit a mortuis, ascendit ad caelos, sedet ad dexteram Dei Patris omnipotentis, inde venturus est iudicare vivos et mortuos. Credo in Spiritum Sanctum, sanctam Ecclesiam catholicam, sanctorum communionem, remissionem peccatorum, carnis resurrectionem, vitam aeternam. Amen. </LatinPrayer>
+         <LatinPrayerWithAccents>Credo in Deum Patrem omnipoténtem, Creatórem cæli et terræ. Et in Iesum Christum, Fílium eius únicum, Dóminum nostrum, qui concéptus est de Spíritu Sancto, natus ex María Vírgine, passus sub Póntio Piláto, crucifíxus, mórtuus, et sepúltus, descéndit ad ínferos, tértia die resurréxit a mórtuis, ascéndit ad cælos, sedet ad déxteram Dei Patris omnipoténtis, inde ventúrus est iudicáre vivos et mórtuos. Credo in Spíritum Sanctum, sanctam Ecclésiam Cathólicam, sanctórum communiónem, remissiónem peccatórum, carnis resurrectiónem, vitam ætérnam. Amen.</LatinPrayerWithAccents>
+         <Source>http://www.preces-latinae.org/thesaurus/Basics/Apostolorum.html</Source>
+    </SymbolumApostolorum>
+
+
+
+</root>
+

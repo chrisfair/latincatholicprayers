@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : CatholicPrayers.xml
+    Created on : November 4, 2010, 7:34 PM
+    Author     : christopher
+    Description:
+       Catholic Prayers in Latin and English.  Any number of prayers can be
+       added to any given prayer list provided that the number isn't so large
+       that a given computer has a hard time parsing the list.  As a rule
+       of thumb I am restricting each file to approximately ten prayers maximum
+       feel free to expand as you see fit.  However it isn't really necessary
+       any number of additional prayer lists can also be added provided that
+       the ListOfPrayerLists.xml is updated with the necessary information.  If
+       this is the original python version of the program any lists added to the
+       ListOfLists will automatically be added to the program.  Accompanying
+       sound files for each prayer can be added to the SoundFile directory and
+       should be named after the tag appended with .ogg (and should be ogg vobis
+       format as well).
+
+    <Template>
+         <EnglishPrayerName></EnglishPrayerName>
+         <LatinPrayerName></LatinPrayerName>
+         <EnglishPrayer></EnglishPrayer>
+         <LatinPrayer></LatinPrayer>
+         <LatinPrayerWithAccents></LatinPrayerWithAccents> (optional)
+         <Source></Source>
+    </Template>
+
+
+-->
+
+<root>
+
+    <PaterNoster>
+        <EnglishPrayerName>Our Father</EnglishPrayerName>
+        <LatinPrayerName>Pater Noster</LatinPrayerName>
+        <EnglishPrayer>Our Father, who art in heaven, hallowed be Thy name. Thy kingdom come. Thy will be done on earth as it is in heaven. Give us this day our daily bread and forgive us our trespasses as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. Amen.</EnglishPrayer>
+        <LatinPrayer>Pater noster, qui es in caelis, sanctificetur nomen tuum. Adveniat regnum tuum. Fiat voluntas tua, sicut in caelo et in terra. Panem nostrum cotidianum da nobis hodie, et dimitte nobis debita nostra sicut et nos dimittimus debitoribus nostris. Et ne nos inducas in tentationem, sed libera nos a malo. Amen. </LatinPrayer>
+        <LatinPrayerWithAccents>Pater noster, qui es in cælis, sanctificétur nomen tuum. Advéniat regnum tuum. Fiat volúntas tua, sicut in cælo et in terra. Panem nostrum cotidiánum da nobis hódie, et dimítte nobis débita nostra sicut et nos dimíttimus debitóribus nostris. Et ne nos indúcas in tentatiónem, sed líbera nos a malo. Amen. </LatinPrayerWithAccents>
+        <Source>http://www.preces-latinae.org/thesaurus/Basics/OraDom.html</Source>
+    </PaterNoster>
+
+    <AveMaria>
+        <EnglishPrayerName>Hail Mary</EnglishPrayerName>
+        <LatinPrayerName>Ave Maria</LatinPrayerName>
+        <EnglishPrayer>Hail Mary, full of grace, the Lord is with thee. Blessed art thou amongst women and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now, and in the hour of our death. Amen. </EnglishPrayer>
+        <LatinPrayer>Ave Maria, gratia plena, Dominus tecum. Benedicta tu in mulieribus, et benedictus fructus ventris tui, Iesus. Sancta Maria, Mater Dei, ora pro nobis peccatoribus, nunc, et in hora mortis nostrae. Amen. </LatinPrayer>
+        <LatinPrayerWithAccents>Ave María, grátia plena, Dóminus tecum. Benedícta tu in muliéribus, et benedíctus fructus ventris tui, Iesus. Sancta María, Mater Dei, ora pro nobis peccatóribus, nunc, et in hora mortis nostræ. Amen.</LatinPrayerWithAccents>
+        <Source>http://www.preces-latinae.org/thesaurus/Basics/AveMaria.html</Source>
+    </AveMaria>
+
+    <GloriaPatri>
+         <EnglishPrayerName>Glory Be</EnglishPrayerName>
+         <LatinPrayerName>Gloria Patri</LatinPrayerName>
+         <EnglishPrayer>Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and will be forever. Amen. </EnglishPrayer>
+         <LatinPrayer>Gloria Patri, et Filio, et Spiritui Sancto. Sicut erat in principio, et nunc, et semper, et in saecula saeculorum. Amen. </LatinPrayer>
+         <LatinPrayerWithAccents>Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc, et semper, et in sæcula sæculórum. Amen. </LatinPrayerWithAccents>
+         <Source>http://www.preces-latinae.org/thesaurus/Basics/GloriaPatri.html</Source>
+    </GloriaPatri>
+
+    <SignumCrucis>
+         <EnglishPrayerName>Sign of the Cross</EnglishPrayerName>
+         <LatinPrayerName>Signum Crucis</LatinPrayerName>
+         <EnglishPrayer>In the name of the Father, and of the Son, and of the Holy Spirit. Amen. </EnglishPrayer>
+         <LatinPrayer>In nomine Patris, et Filii, et Spiritus Sancti. Amen.</LatinPrayer>
+         <LatinPrayerWithAccents>In nómine Patris, et Fílii, et Spíritus Sancti. Amen.</LatinPrayerWithAccents>
+         <Source>http://www.preces-latinae.org/thesaurus/Basics/SignumC.html</Source>
+    </SignumCrucis>
+
+     <SymbolumApostolorum>
+         <EnglishPrayerName>Apostles' Creed</EnglishPrayerName>
+         <LatinPrayerName>Symbolum Apostolorum</LatinPrayerName>
+         <EnglishPrayer>I believe in God, the Father almighty, Creator of heaven and earth. I believe in Jesus Christ, His only Son, our Lord. He was conceived by the power of the Holy Spirit and born of the Virgin Mary. He suffered under Pontius Pilate, was crucified, died, and was buried. He descended to the dead. On the third day He rose again. He ascended into heaven and sits at the right hand of God, the Father Almighty. From thence He shall come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen. </EnglishPrayer>
+         <LatinPrayer>Credo in Deum Patrem omnipotentem, Creatorem caeli et terrae. Et in Iesum Christum, Filium eius unicum, Dominum nostrum, qui conceptus est de Spiritu Sancto, natus ex Maria Virgine, passus sub Pontio Pilato, crucifixus, mortuus, et sepultus, descendit ad inferos, tertia die resurrexit a mortuis, ascendit ad caelos, sedet ad dexteram Dei Patris omnipotentis, inde venturus est iudicare vivos et mortuos. Credo in Spiritum Sanctum, sanctam Ecclesiam catholicam, sanctorum communionem, remissionem peccatorum, carnis resurrectionem, vitam aeternam. Amen. </LatinPrayer>
+         <LatinPrayerWithAccents>Credo in Deum Patrem omnipoténtem, Creatórem cæli et terræ. Et in Iesum Christum, Fílium eius únicum, Dóminum nostrum, qui concéptus est de Spíritu Sancto, natus ex María Vírgine, passus sub Póntio Piláto, crucifíxus, mórtuus, et sepúltus, descéndit ad ínferos, tértia die resurréxit a mórtuis, ascéndit ad cælos, sedet ad déxteram Dei Patris omnipoténtis, inde ventúrus est iudicáre vivos et mórtuos. Credo in Spíritum Sanctum, sanctam Ecclésiam Cathólicam, sanctórum communiónem, remissiónem peccatórum, carnis resurrectiónem, vitam ætérnam. Amen.</LatinPrayerWithAccents>
+         <Source>http://www.preces-latinae.org/thesaurus/Basics/Apostolorum.html</Source>
+    </SymbolumApostolorum>
+
+    <AngeleDei>
+         <EnglishPrayerName>Angel of God</EnglishPrayerName>
+         <LatinPrayerName>Angele Dei</LatinPrayerName>
+         <EnglishPrayer>Angel of God, my guardian dear, To whom his love commits me here; Ever this day be at my side, To light and guard, to rule and guide.  Amen.  </EnglishPrayer>
+         <LatinPrayer>Angele Dei, qui custos es mei, Me tibi commissum pietate superna; Hodie illumina, custodi, rege, et guberna.  Amen. </LatinPrayer>
+         <latinPrayerWithAccents>Ángele Dei, qui custos es mei, Me tibi commíssum pietáte supérna; Hódie illúmina, custódi, rege, et gubérna.  Amen</latinPrayerWithAccents>
+        <Source>http://www.preces-latinae.org/thesaurus/Basics/AngeleDei.html</Source>
+    </AngeleDei>
+
+    <BenedictioAntePrandium>
+         <EnglishPrayerName>Blessing Before Lunch</EnglishPrayerName>
+         <LatinPrayerName>Benediction Ante Prandium</LatinPrayerName>
+         <EnglishPrayer>Bless us, O Lord, and these Thy gifts which we are about to receive from Thy bounty, through Christ our Lord. Amen. May the King of everlasting glory make us partakers of the heavenly table. Amen. </EnglishPrayer>
+         <LatinPrayer>Benedic, Domine, nos et haec tua dona quae de tua largitate sumus sumpturi. Per Christum Dominum nostrum. Amen.  Mensae caelestis participes faciat nos, Rex aeternae gloriae. Amen.</LatinPrayer>
+         <Source>http://www.preces-latinae.org/thesaurus/Basics/Mensae.html</Source>
+    </BenedictioAntePrandium>
+
+    <BenedictioAnteCenam>
+         <EnglishPrayerName>Blessing Before Dinner</EnglishPrayerName>
+         <LatinPrayerName>Benediction Ante Cenam</LatinPrayerName>
+         <EnglishPrayer>Bless us, O Lord, and these Thy gifts which we are about to receive from Thy bounty, through Christ our Lord. Amen. May the King of ever-lasting glory lead us to the banquet of life eternal. Amen.  </EnglishPrayer>
+         <LatinPrayer>Benedic, Domine, nos et haec tua dona quae de tua largitate sumus sumpturi. Per Christum Dominum nostrum. Amen.  Ad cenam vitae aeternae perducat nos, Rex aeternae gloriae. Amen. </LatinPrayer>
+         <Source>http://www.preces-latinae.org/thesaurus/Basics/Mensae.html</Source>
+    </BenedictioAnteCenam>
+
+    <BenedictioPostMensam>
+         <EnglishPrayerName>Blessing After Meals</EnglishPrayerName>
+         <LatinPrayerName>Benedictio Post Mensam</LatinPrayerName>
+         <EnglishPrayer>We give Thee thanks, almighty God, for all Thy benefits, who livest and reignest for ever and ever. Amen. May the Lord grant us His peace.  And life everlasting.  Amen</EnglishPrayer>
+         <LatinPrayer>Agimus tibi gratias, omnipotens Deus, pro universis beneficiis tuis, qui vivis et regnas in saecula saeculorum. Amen. Deus det nobis suam pacem.  Et vitam aeternam.  Amen</LatinPrayer>
+         <Source>http://www.preces-latinae.org/thesaurus/Basics/Mensae.html</Source>
+    </BenedictioPostMensam>
+
+     <SancteMichael>
+         <EnglishPrayerName>Saint Michael Prayer</EnglishPrayerName>
+         <LatinPrayerName>SancteMichael</LatinPrayerName>
+         <EnglishPrayer>Saint Michael the Archangel, defend us in battle; be our defense against the wickedness and snares of the devil. May God rebuke him, we humbly pray. And do thou, O prince of the heavenly host, by the power of God thrust into hell Satan and all the evil spirits who prowl about the world for the ruin of souls. Amen. </EnglishPrayer>
+         <LatinPrayer>Sancte Michael Archangele, defende nos in proelio, contra nequitiam et insidias diaboli esto praesidium. Imperet illi Deus, supplices deprecamur: tuque, Princeps militiae caelestis, Satanam aliosque spiritus malignos, qui ad perditionem animarum pervagantur in mundo, divina virtute, in infernum detrude. Amen. </LatinPrayer>
+         <LatinPrayerWithAccents>Sancte Míchael Archángele, defénde nos in proélio, contra nequítiam et insídias diáboli esto præsídium. Imperet illi Deus, súpplices deprecámur: tuque, Princeps milítiæ cæléstis, Sátanam aliósque spíritus malígnos, qui ad perditiónem animárum pervagántur in mundo, divína virtúte, in inférnum detrúde. Amen. </LatinPrayerWithAccents>
+         <Source>http://www.preces-latinae.org/thesaurus/Angeli/SancteMichael.html</Source>
+    </SancteMichael>
+
+    <ActusContritionis>
+         <EnglishPrayerName>Act of Contrition</EnglishPrayerName>
+         <LatinPrayerName>ActusContritionis</LatinPrayerName>
+         <EnglishPrayer>O MY God, I am heartily sorry for having offended Thee and I detest all my sins because of Thy just punishments, but most of all because they offend Thee, my God, who art all good and deserving of all my love. I firmly resolve, with the help of Thy grace, to sin no more and avoid the near occasions of sin. Amen. </EnglishPrayer>
+         <LatinPrayer>DEUS meus, ex toto corde paenitet me omnium meorum peccatorum, eaque detestor, quia peccando, non solum poenas a Te iuste statutas promeritus sum, sed praesertim quia offendi Te, summum bonum, ac dignum qui super omnia diligaris. Ideo firmiter propono, adiuvante gratia Tua, de cetero me non peccaturum peccandique occasiones proximas fugiturum. Amen. </LatinPrayer>
+         <Source>http://www.preces-latinae.org/thesaurus/Confessio/ActusCont.html</Source>
+    </ActusContritionis>
+
+    <SerenityPrayer>
+
+         <EnglishPrayerName>Serenity Prayer</EnglishPrayerName>
+         <LatinPrayerName>Serenity Prayer</LatinPrayerName>
+         <EnglishPrayer>God, grant me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference.</EnglishPrayer>
+         <LatinPrayer>Deus, dona mihi tranquilitatem accipere res quae non possum transformare, fortitudinem transformare res quae possum, atque sapientiam differitatem congnoscere.</LatinPrayer>
+         <LatinPrayerWithAccents>Deus, dona mihi tranquilitátem accípere res quæ non possum transformáre, fortitúdinem transformáre res quæ possum, atque sapiéntiam differitátem cognoscére.</LatinPrayerWithAccents>
+         <Source>I translated this to Latin, the origin is somewhat disputed but it is widely used in AA.</Source>
+
+    </SerenityPrayer>
+
+</root>

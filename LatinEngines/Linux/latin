@@ -1,0 +1,6 @@
+#! /bin/bash
+
+#WORDSPATH=/home/christopher/Programs/words-1.97Ed
+
+#( cd $WORDSPATH ; ./words $* )
+./words $*

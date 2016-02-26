@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : CatholicPrayers.xml
+    Created on : November 4, 2010, 7:34 PM
+    Author     : christopher
+    Description:
+       Catholic Prayers in Latin and English.  Any number of prayers can be
+       added to any given prayer list provided that the number isn't so large
+       that a given computer has a hard time parsing the list.  As a rule
+       of thumb I am restricting each file to approximately ten prayers maximum
+       feel free to expand as you see fit.  However it isn't really necessary
+       any number of additional prayer lists can also be added provided that
+       the ListOfPrayerLists.xml is updated with the necessary information.  If
+       this is the original python version of the program any lists added to the
+       ListOfLists will automatically be added to the program.  Accompanying
+       sound files for each prayer can be added to the SoundFile directory and
+       should be named after the tag appended with .ogg (and should be ogg vobis
+       format as well).
+
+    <Template>
+         <EnglishPrayerName></EnglishPrayerName>
+         <LatinPrayerName></LatinPrayerName>
+         <EnglishPrayer></EnglishPrayer>
+         <LatinPrayer></LatinPrayer>
+         <LatinPrayerWithAccents></LatinPrayerWithAccents> (optional)
+         <Source></Source>
+    </Template>
+
+
+-->
+
+<root>
+
+
+     <CorMundum>
+         <EnglishPrayerName>A Clean Heart</EnglishPrayerName>
+         <LatinPrayerName>Cor Mundum</LatinPrayerName>
+         <EnglishPrayer>A clean heart create in me, O God.</EnglishPrayer>
+         <LatinPrayer>Cor mundum crea in me, Deus</LatinPrayer>
+         <LatinPrayerWithAccents>Cor mundum crea in me, Deus</LatinPrayerWithAccents>
+         <Source>Handbook of Prayers, James Socias, Midwest Theological Forum, 2005, page 547</Source>
+    </CorMundum>
+
+
+
+</root>
+

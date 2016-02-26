@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : CatholicPrayers.xml
+    Created on : November 4, 2010, 7:34 PM
+    Author     : christopher
+    Description:
+       Catholic Prayers in Latin and English.  Any number of prayers can be
+       added to any given prayer list provided that the number isn't so large
+       that a given computer has a hard time parsing the list.  As a rule
+       of thumb I am restricting each file to approximately ten prayers maximum
+       feel free to expand as you see fit.  However it isn't really necessary
+       any number of additional prayer lists can also be added provided that
+       the ListOfPrayerLists.xml is updated with the necessary information.  If
+       this is the original python version of the program any lists added to the
+       ListOfLists will automatically be added to the program.  Accompanying
+       sound files for each prayer can be added to the SoundFile directory and
+       should be named after the tag appended with .ogg (and should be ogg vobis
+       format as well).
+
+    <Template>
+         <EnglishPrayerName></EnglishPrayerName>
+         <LatinPrayerName></LatinPrayerName>
+         <EnglishPrayer></EnglishPrayer>
+         <LatinPrayer></LatinPrayer>
+         <LatinPrayerWithAccents></LatinPrayerWithAccents> (optional)
+         <Source></Source>
+    </Template>
+
+
+-->
+
+<root>
+   <AdDeum>
+      <EnglishPrayerName>To God</EnglishPrayerName>
+      <LatinPrayerName>Ad Deum</LatinPrayerName>
+      <EnglishPrayer>To God who giveth joy to my youth.</EnglishPrayer>
+      <LatinPrayer>Ad Deum qui laetificat juventutem meam.</LatinPrayer>
+       <LatinPrayerWithAccents>Ad Deum qui lætíficat juventútem meam.</LatinPrayerWithAccents>
+<Source>1962 Missal Mass of the Catechumens</Source>
+
+   </AdDeum>
+
+   <QuiaTu>
+      <EnglishPrayerName>For Thou</EnglishPrayerName>
+      <LatinPrayerName>Quia Tu</LatinPrayerName>
+      <EnglishPrayer>For Thou, O God, art my strength why hast Thou cast me off, and why do I go sorrowful whilst the enemy afflicteth me?</EnglishPrayer>
+      <LatinPrayer>Quia tu es Deus, fortitudo mea quare me repulisti, et quare tristis incedo, dum affligit me inimicus?</LatinPrayer> 
+
+      <LatinPrayerWithAccents>Quia tu es Deus, fortitúdo mea quare me repulísti, et quare tristis incédo, dum afflígit me inimícus?</LatinPrayerWithAccents> 
+<Source>1962 Missal Mass of the Catechumens</Source>
+
+   </QuiaTu>
+
+
+   <Confiteor>
+      <EnglishPrayerName>I confess</EnglishPrayerName>
+      <LatinPrayerName>Confiteor</LatinPrayerName>
+      <EnglishPrayer>I confess To almighty God, to blessed Mary ever Virgin, to blessed Michael the Archangel, to blessed John the Baptist, to the holy apostles Peter and Paul, and to all the saints that I have sinned exceedingly in thought, word, and deed, through my fault, through my fault, through my most grievous fault. Therefore, I beseech blessed Mary ever Virgin, blessed Michael the Archangel, blessed John the Baptist, the holy apostles Peter and Paul, and all the saints, to pray for me to the Lord our God. Amen.  </EnglishPrayer>
+      <LatinPrayer>Confiteor Deo omnipoténti, beatæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Joanni Baptistae, sanctis Apostolis Petro et Paulo, et omnibus Sanctis, et tibi, pater: quia peccavi nimis cogitatione, verbo et opere: mea culpa, mea culpa, mea maxima culpa. Ideo precor beatam Mariam semper Virginem, beatum Michaelem Archangelum, beatum Ioannem Baptistam, sanctos Apostolos Petrum et Paulum, et omnes Sanctos, orare pro me ad Dominum Deum nostrum. Amen.</LatinPrayer>
+      <LatinPrayerWithAccents>Confiteor Deo omnipoténti, beatæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Joánni Baptístæ, sanctis Apostólis Petro et Paulo, et ómnibus Sanctis, et tibi, pater: quia peccávi nimis cogitatióne, verbo et ópere: mea culpa, mea culpa, mea máxima culpa. Ideo precor beátam Maríam semper Vírginem, beátum Michaélem Archángelum, beátum Joánnem Baptístam, sanctos Apóstolos Petrum et Paulum, et omnes Sanctos, oráre pro me ad Dóminum Deum nostrum. Amen.</LatinPrayerWithAccents>
+      <Source>http://www.preces-latinae.org/thesaurus/Basics/Apostolorum.html</Source>
+   </Confiteor>
+
+</root>
+

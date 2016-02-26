@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : ListOfPrayerLists.xml
+    Created on : November 7, 2010, 2:01 PM
+    Author     : christopher
+    Description:
+        This is a list of prayer lists
+
+        <Template>
+
+        <ListFileName>BasicCatholicPrayers.xml</ListFileName>
+        <PrettyFormat>Basic Catholic Prayers</PrettyFormat>
+
+    </Template>
+-->
+
+<root>
+
+    <BasicCatholicPrayers>
+        
+        <ListFileName>BasicCatholicPrayers.xml</ListFileName>
+        <PrettyFormat>Basic Catholic Prayers</PrettyFormat>
+   
+    </BasicCatholicPrayers>
+
+    <MarianPrayerCollection>
+
+        <ListFileName>MarianPrayerCollection.xml</ListFileName>
+        <PrettyFormat>Marian Prayer Collection</PrettyFormat>
+
+    </MarianPrayerCollection>
+
+    <ScriptureBigTen>
+        <ListFileName>ScriptureBigTen.xml</ListFileName>
+        <PrettyFormat>Big Ten Scriptures</PrettyFormat>
+    </ScriptureBigTen>
+
+     <Creeds>
+        <ListFileName>Creeds.xml</ListFileName>
+        <PrettyFormat>Creeds</PrettyFormat>
+    </Creeds>
+
+     <Aspirations>
+        <ListFileName>Aspirations.xml</ListFileName>
+        <PrettyFormat>Aspirations</PrettyFormat>
+    </Aspirations>
+
+     <LiturgiaHorarum>
+        <ListFileName>LiturgiaHorarum.xml</ListFileName>
+        <PrettyFormat>LiturgiaHorarum</PrettyFormat>
+    </LiturgiaHorarum>
+   
+    <MassPrayers>
+        <ListFileName>MassPrayers.xml</ListFileName>
+        <PrettyFormat>Mass Prayers</PrettyFormat>
+    </MassPrayers>
+
+
+</root>
