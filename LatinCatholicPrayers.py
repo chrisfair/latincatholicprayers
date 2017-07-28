@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 # -*- coding: utf-8 -*-
 
 import wx
@@ -36,17 +36,17 @@ class MyFrame(wx.Frame):
 
             <h2>Information about Latin Catholic Prayers</h2>
 
-            <p>If you want more information concerning how to use Latin Catholic Prayer Find it in the links below.
-
-            by Christopher P. Fair</p>
-
-            <p><b>I also have Android apps:)</h3></p>
-
-            <p><b><a href="http://latinlovingcatholic.blogspot.com/">Latin Loving Catholic Blog</a></b></p>
-
-            <p><b><a href="https://sourceforge.net/donate/index.php?group_id=383179">Donations</a></b></p>
-
-            <p><b><a href="https://market.android.com/details?id=catholic.prayers.latin">Pater Noster Android App</a></b></p>'''
+            <p>The program is easy to use.   Select the prayer group you want
+            to work on.  Then select the prayer you should like to memorize.
+            Clicking the quiz will result in a quiz starting.   Click the word
+            you think is the best and you will score a success or a failure.  A
+            score shows in the top window.  You can also view the grammar for 
+            any particular word by clicking on it then clicking grammar.  If
+            you want the grammar for the whole prayer select nothing then press
+            grammar.  If you want to hear the prayer then click the play the
+            player button. </p>
+            
+            '''
 
         kwds['style'] = wx.DEFAULT_FRAME_STYLE
         wx.Frame.__init__(self, *args, **kwds)
@@ -538,10 +538,10 @@ class MyFrame(wx.Frame):
 
         info.SetIcon(wx.Icon(iconFilePath, wx.BITMAP_TYPE_PNG))
         info.SetName('Catholic Latin Prayers')
-        info.SetVersion('1.35')
+        info.SetVersion('1.36')
         info.SetDescription(description)
-        info.SetCopyright('(C) 2013 Christopher Patrick Fair')
-        info.SetWebSite('http://latinlovingcatholic.blogspot.com/')
+        info.SetCopyright('(C) 2016 Christopher Patrick Fair')
+        #info.SetWebSite('http://latinlovingcatholic.blogspot.com/')
         info.SetLicence(license)
         info.AddDeveloper('Christopher P. Fair')
 
