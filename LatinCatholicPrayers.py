@@ -11,7 +11,7 @@ import thread
 import platform
 import pickle
 import webbrowser
-
+import os.path
 
 class wxHTML(wx.html.HtmlWindow):
 
@@ -458,14 +458,20 @@ class MyFrame(wx.Frame):
         pygame.init()
         pygame.mixer.init()
 
-        pygame.mixer.music.load(fileName)
-        pygame.mixer.music.play(0)
+        fileExists = os.path.isfile(fileName)
+        if fileExists:
 
-        clock = pygame.time.Clock()
-        clock.tick(10)
-        while pygame.mixer.music.get_busy():
-            pygame.event.poll()
-            clock.tick(10)
+         pygame.mixer.music.load(fileName)
+         pygame.mixer.music.play(0)
+
+         clock = pygame.time.Clock()
+         clock.tick(10)
+         while pygame.mixer.music.get_busy():
+             pygame.event.poll()
+             clock.tick(10)
+        else:
+         print (fileName + " is not found")
+        
         pygame.close()
         pygame.mixer.close()
 
