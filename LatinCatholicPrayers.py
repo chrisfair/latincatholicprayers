@@ -393,50 +393,43 @@ class MyFrame(wx.Frame):
 
     def btnShowGrammarClick(self, event):  # wxGlade: MyFrame.<event_handler>
 
-        contentsOfSelection = self.txtDisplayPrayer.GetStringSelection()
-        if contentsOfSelection != '':
-            searchTerms = \
-                self.Parser.scrubListOfPunctuation(contentsOfSelection.split(' '
-                    ))
+        runCommandForGrammar = '/usr/bin/words'
+        commandExists = os.path.isfile(runCommandForGrammar)
+        if commandExists:
+         contentsOfSelection = self.txtDisplayPrayer.GetStringSelection()
+         if contentsOfSelection != '':
+             searchTerms = \
+                 self.Parser.scrubListOfPunctuation(contentsOfSelection.split(' '
+                     ))
+         else:
+             searchTerms = \
+                 self.Parser.scrubListOfPunctuation(self.txtDisplayPrayer.GetValue().split(' '
+                     ))
+         operatingSystem = platform.system().lower()
+         runCommandForGrammar = 'words'
+   
+         for searchTerm in searchTerms:
+             if searchTerm != '':
+   
+                 currentDirectory = self.getCurrentFileLocation()
+                  
+                 try:
+                     myOutput = subprocess.Popen([runCommandForGrammar,
+                             self.Parser.unicodeToAscii(searchTerm)],
+                             stdout=subprocess.PIPE).communicate()[0]
+                 except:
+                     myOutput = 'An error has occured try again.'
+                 os.chdir(currentDirectory)
+                 self.txtDisplayInfo.SetValue((self.txtDisplayInfo.GetValue()
+                          + '''
+   
+                          ''' + myOutput).strip('\n'))
+
+         event.Skip()
+         
         else:
-            searchTerms = \
-                self.Parser.scrubListOfPunctuation(self.txtDisplayPrayer.GetValue().split(' '
-                    ))
-        operatingSystem = platform.system().lower()
-        runCommandForGrammar = ''
-
-        for searchTerm in searchTerms:
-            if searchTerm != '':
-
-                currentDirectory = self.getCurrentFileLocation()
-
-                newDirectory = os.path.join(currentDirectory,
-                        'LatinEngines')
-                if operatingSystem.find('linux') != -1:
-                    newDirectory = os.path.join(newDirectory, 'Linux')
-                    runCommandForGrammar = './words'
-                if operatingSystem.find('windows') != -1\
-                     or operatingSystem.find('microsoft') != -1:
-                    newDirectory = os.path.join(newDirectory, 'Windows')
-                    runCommandForGrammar = 'words.exe'
-                if operatingSystem.find('darwin') != -1:
-                    newDirectory.path.join(newDirectory, 'Linux')
-                    runCommandForGrammar = './words'
-                os.chdir(newDirectory)
-
-                try:
-                    myOutput = subprocess.Popen([runCommandForGrammar,
-                            self.Parser.unicodeToAscii(searchTerm)],
-                            stdout=subprocess.PIPE).communicate()[0]
-                except:
-                    myOutput = 'An error has occured try again.'
-                os.chdir(currentDirectory)
-                self.txtDisplayInfo.SetValue((self.txtDisplayInfo.GetValue()
-                         + '''
-
-''' + myOutput).strip('\n'))
-
-        event.Skip()
+         print (runCommandForGrammar + " was not found...please install whitakers words")
+         
 
     def btnChangeFontClick(self, event):
 
