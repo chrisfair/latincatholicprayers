@@ -7,7 +7,6 @@ import os
 import subprocess
 import pygame
 import parsersAndCalculators
-import thread
 import platform
 import pickle
 import webbrowser
@@ -40,12 +39,12 @@ class MyFrame(wx.Frame):
             to work on.  Then select the prayer you should like to memorize.
             Clicking the quiz will result in a quiz starting.   Click the word
             you think is the best and you will score a success or a failure.  A
-            score shows in the top window.  You can also view the grammar for 
+            score shows in the top window.  You can also view the grammar for
             any particular word by clicking on it then clicking grammar.  If
             you want the grammar for the whole prayer select nothing then press
             grammar.  If you want to hear the prayer then click the play the
             player button. </p>
-            
+
             '''
 
         kwds['style'] = wx.DEFAULT_FRAME_STYLE
@@ -70,7 +69,7 @@ class MyFrame(wx.Frame):
         self.__do_layout()
         self.__set_styles()
         self.__set_events()
-       
+
     def __set_buttons(self):
         self.lblWordChoice = wx.StaticText(self, -1, 'Word Choice')
         self.lsbWordChoice = wx.ListBox(self, -1, choices=[])
@@ -134,10 +133,10 @@ class MyFrame(wx.Frame):
             self.Parser.getListOfListsFileNames()[self.cmbPrayerListSelect.Selection]
         self.CurrentPrayerName = \
             self.Parser.getListOfPrayerTags(self.CurrentPrayerList)[self.cmbPrayerToTest.Selection]
-        
+
         currentDirectory = os.path.abspath(__file__)
         currentDirectory = os.path.dirname(currentDirectory)
-        
+
         newDirectory = os.path.join(currentDirectory, 'settings.dump')
 
         programSettings = pickle.load(open(newDirectory))
@@ -324,7 +323,7 @@ class MyFrame(wx.Frame):
                                     1))
         except:
             wx.MessageBox(fileName + ' was not found', 'info')
-            print errorcode
+            print (errorcode)
         event.Skip()
 
     def btnStartQuizClick(self, event):  # wxGlade: MyFrame.<event_handler>
@@ -500,13 +499,13 @@ class MyFrame(wx.Frame):
             fontWeight,
             fontStyle,
             ]
-        
+
         currentDirectory = os.path.abspath(__file__)
         currentDirectory = os.path.dirname(currentDirectory)
         newDirectory = os.path.join(currentDirectory, 'settings.dump')
         pickleFilePath = os.path.join(currentDirectory, 'settings.dump')
 
-        print pickleFilePath + " - when written" 
+        print (pickleFilePath + " - when written")
         pickle.dump(fullListOfAttributes, open(pickleFilePath, 'w'))
 
         self.Destroy()
@@ -541,7 +540,6 @@ class MyFrame(wx.Frame):
         info.SetVersion('1.36')
         info.SetDescription(description)
         info.SetCopyright('(C) 2016 Christopher Patrick Fair')
-        #info.SetWebSite('http://latinlovingcatholic.blogspot.com/')
         info.SetLicence(license)
         info.AddDeveloper('Christopher P. Fair')
 
@@ -573,13 +571,13 @@ if __name__ == '__main__':
     currentDirectory = os.path.abspath(__file__)
     currentDirectory = os.path.dirname(currentDirectory)
     newDirectory = os.path.join(currentDirectory, 'settings.dump')
-    print newDirectory + " - When read"
+    print (newDirectory + " - When read")
     try:
         programSettings = pickle.load(open(newDirectory))
         frame_1.SetSize(programSettings[5])
         frame_1.SetPosition(programSettings[6])
     except:
-        print 'There is no file yet for settings.'
+        print ('There is no file yet for settings.')
 
     frame_1.Show()
     app.MainLoop()
