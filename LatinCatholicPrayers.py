@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 import wx
@@ -21,7 +21,7 @@ class wxHTML(wx.html.HtmlWindow):
 class MyFrame(wx.Frame):
 
     def __init__(self, *args, **kwds):
-        self.font = wx.SystemSettings_GetFont(wx.SYS_SYSTEM_FONT)
+        self.font = wx.SystemSettings.GetFont(wx.SYS_SYSTEM_FONT)
         self.font.SetPointSize(14)
         self.Parser = parsersAndCalculators.Parsers()
         self.CurrentPrayerName = ''
