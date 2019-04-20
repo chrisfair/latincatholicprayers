@@ -130,31 +130,34 @@ class MyFrame(wx.Frame):
         self.html.SetPage(self.HTMLContents)
 
         self.CurrentPrayerList = \
-            self.Parser.getListOfListsFileNames()[self.cmbPrayerListSelect.Selection]
+            self.Parser.getListOfListsFileNames() \
+                [self.cmbPrayerListSelect.Selection]
         self.CurrentPrayerName = \
-            self.Parser.getListOfPrayerTags(self.CurrentPrayerList)[self.cmbPrayerToTest.Selection]
+            self.Parser.getListOfPrayerTags(self.CurrentPrayerList)\
+                [self.cmbPrayerToTest.Selection]
 
         currentDirectory = os.path.abspath(__file__)
         currentDirectory = os.path.dirname(currentDirectory)
 
         newDirectory = os.path.join(currentDirectory, 'settings.dump')
+        exists = os. path. isfile(newDirectory)
+        if exists:
+            programSettings = pickle.load(open(newDirectory))
+            self.cmbPrayerListSelect.Selection = programSettings[0]
+            self.cmbPrayerListSelectClick(0)
+            self.cmbPrayerToTest.Selection = programSettings[1]
+            self.txtDisplayPrayer.SetValue(programSettings[2])
+            self.txtDisplayInfo.SetValue(programSettings[3])
+            self.lsbWordChoice.Items = programSettings[4]
+            self.CurrentPrayerName = \
+                self.Parser.getListOfPrayerTags \
+                    (self.CurrentPrayerList)[self.cmbPrayerToTest.Selection]
 
-        programSettings = pickle.load(open(newDirectory))
-
-        self.cmbPrayerListSelect.Selection = programSettings[0]
-        self.cmbPrayerListSelectClick(0)
-        self.cmbPrayerToTest.Selection = programSettings[1]
-        self.txtDisplayPrayer.SetValue(programSettings[2])
-        self.txtDisplayInfo.SetValue(programSettings[3])
-        self.lsbWordChoice.Items = programSettings[4]
-        self.CurrentPrayerName = \
-            self.Parser.getListOfPrayerTags(self.CurrentPrayerList)[self.cmbPrayerToTest.Selection]
-
-        self.font.SetPointSize(programSettings[7])
-        self.font.SetFaceName(programSettings[8])
-        self.font.SetFamily(programSettings[9])
-        self.font.SetWeight(programSettings[10])
-        self.font.SetStyle(programSettings[11])
+            self.font.SetPointSize(programSettings[7])
+            self.font.SetFaceName(programSettings[8])
+            self.font.SetFamily(programSettings[9])
+            self.font.SetWeight(programSettings[10])
+            self.font.SetStyle(programSettings[11])
         self.__set_styles()
 
     def __set_styles(self):
@@ -483,8 +486,6 @@ class MyFrame(wx.Frame):
         fontWeight = self.font.GetWeight()
         fontStyle = self.font.GetStyle()
 
-
-
         fullListOfAttributes = [
             cmbPrayerListSelectContents,
             cmbPrayerToTestContents,
@@ -550,10 +551,9 @@ class MyFrame(wx.Frame):
     def getCurrentFileLocation(self):
         fileDirectory = os.path.abspath(__file__)
         fileDirectory = os.path.dirname(fileDirectory)
-        if fileDirectory.find('NetBeansProjects') == False:
-            if fileDirectory.find('LatinCatholicPrayers') == True:
-                fileDirectory = os.path.join(fileDirectory,
-                        'LatinCatholicPrayers')
+        if fileDirectory.find('NetBeansProjects') is False:
+            if fileDirectory.find('LatinCatholicPrayers') is True:
+                fileDirectory = os.path.join(fileDirectory, LatinCatholicPrayers)
 
         return fileDirectory
 
